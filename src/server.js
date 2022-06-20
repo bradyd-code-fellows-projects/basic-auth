@@ -33,6 +33,33 @@ UsersModel.beforeCreate = (user) => {
   console.log(user)
 }
 
+async function basicAuth(req, res, next) {
+  let { authorization } = req.headers;
+  console.log(authorization);
+  if (!authorization) {
+    res.status(401).send('Not Authorized');
+  } else {
+    let authStr = authorization.split(' ')[1];
+    console.log('authStr: ', authStr);
+    let decodedAuthStr = base64.decode(authStr);
+    let [ username, password ] = decodedAuthStr.split(':');
+    console.log('username: ', username);
+    console.log('password: ', password);
+
+    let user = await UsersModel.findOne({where: {username}});
+
+    if (user) {
+      let validUser = await bcrypt.compare(password, user.password);
+      if (validUser) {
+        req.user = user;
+        next()
+      } else {
+        res.status(401).send('Not Authorized');
+      }
+    }
+  }
+}
+
 app.post('/signup', async (req, res, next) => {
   try {
     let { username, password } = req.body;

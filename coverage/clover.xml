@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655752032999" clover="3.2.0">
-  <project timestamp="1655752032999" name="All files">
+<coverage generated="1655753396471" clover="3.2.0">
+  <project timestamp="1655753396472" name="All files">
     <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="18" coveredelements="15" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/home/bdavenport/codeFellows/401/auth-api/models/index.js">
       <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>

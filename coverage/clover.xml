@@ -1,26 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655753396471" clover="3.2.0">
-  <project timestamp="1655753396472" name="All files">
-    <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="18" coveredelements="15" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+<coverage generated="1655772576427" clover="3.2.0">
+  <project timestamp="1655772576427" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="0" coveredmethods="0" elements="9" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/home/bdavenport/codeFellows/401/auth-api/models/index.js">
-      <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="26" count="0" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
     </file>
   </project>
 </coverage>

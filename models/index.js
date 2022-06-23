@@ -1,7 +1,8 @@
 'use strict';
 
-const { Sequelize } = require('sequelize');
+const { Sequelize, DataTypes } = require('sequelize');
 require('dotenv').config();
+// const UsersModel = require('../src/auth/models/users-model');
 
 const DATABASE_URL = process.env.NODE_ENV === 'test'
   ? 'sqlite::memory'
@@ -18,4 +19,5 @@ const sequelize = new Sequelize(DATABASE_URL, {
 
 module.exports = {
   sequelize,
+  // UsersModel: UsersModel(sequelize, DataTypes),
 };

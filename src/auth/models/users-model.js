@@ -1,7 +1,8 @@
 'use strict';
 
-const sequelize = require('sequelize');
-const { DataTypes } = require('sequelize');
+const { DataTypes, Sequelize } = require('sequelize');
+const DATABASE_URL = require('../../../models');
+const sequelize = new Sequelize(DATABASE_URL);
 
 const UsersModel = sequelize.define('Users', {
   username: {
